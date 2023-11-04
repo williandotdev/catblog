@@ -1,0 +1,117 @@
+body{
+    font-size: 1.6rem;
+    background-color: var(--color-base-white);
+    color: var(--color-text-primary);
+}
+.app{
+    display: grid;
+    grid-template-rows: max-content 1fr max-content;
+    height: 100vh;
+    
+}
+main h1{
+    padding: 1.6rem;
+    width:min(112rem, 100%);
+    margin:0 auto;
+}
+.container{
+    padding: 1.6rem;
+    width:min(112rem, 100%);
+    margin:0 auto;
+    max-width: 80vw;
+    gap:2rem;
+    row-gap: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.app .container:nth-child(2){
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 6.4rem;
+
+}
+.grade{
+    display: flex;
+    justify-content: center;
+
+}
+header{
+    display: flex;
+    gap: 7.5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+header ul{
+    display: flex;
+    gap: 7.5rem;
+
+}
+.perfil{
+    border-radius: 999rem;
+    width: 4.2rem;
+}
+header input{
+    background-color: var(--color-base-primary);
+    border-radius: .6rem;
+    padding: 1.6rem;
+    width: 30vw;
+    border: 0;
+    font-size: 1.6rem;
+    font-weight: 600;
+    opacity: 0.56; 
+    color: var(--color-base-terciary);
+}
+header label{
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+}
+ul{
+    color: var(--color-text-primary);
+}
+.active{
+    color: var(--color-base-secundary);
+}
+main{
+    background-color: var(--color-base-primary);
+    overflow-y: scroll;
+
+}
+
+.card{
+    background-color: var(--color-base-white);
+    border-radius: .7rem;
+    width: 35rem;
+    padding-bottom:2rem;
+}
+.contend{
+    margin: 2.2rem;
+    
+}
+.card img{
+    width: 100%;
+    zoom: 200rem;
+    border-radius: .7rem .7rem 0 0;
+}
+.card img:hover{
+    filter: hue-rotate(7deg) contrast(101%) saturate(200%);
+    transition: scale(5.1) rotate(-200deg); 
+}
+.tag{
+    width: 4.7rem;
+    height: 2.2rem;
+    background-color: var(--color-base-primary);
+    border-radius: .5rem;
+    text-transform: uppercase;
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
